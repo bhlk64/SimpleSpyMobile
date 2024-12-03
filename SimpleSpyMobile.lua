@@ -2641,7 +2641,9 @@ mtb.Position = UDim2.new(-0.025, mou.X, -0.05, mou.Y)
 end
 end)
 
-	--Set middle position
+	--Set middle position   
+if cg.SimpleSpy2:WaitForChild("Background") then 
+		task.wait(5)
+		cg:WaitForChild("SimpleSpy2").WaitForChild("Background").Position = UDim2.new(0, 150, 0, 0)
+	end
 
-cg:WaitForChild("SimpleSpy2").WaitForChild("Background").Position = UDim2.new(0, 150, 0, 0)
- 
