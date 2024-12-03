@@ -2612,10 +2612,6 @@ mtb.ImageLabel.Image = "http://www.roblox.com/asset/?id=5597105827"
 mtb.ImageLabel.Size = UDim2.new(0.7, 0, 0.7, 0)
 mtb.ImageLabel.Position = UDim2.new(0.15, 0, 0.15, 0)
 
---Set middle position
-
-cg.SimpleSpy2.Background.Position = UDim2.new(0, 150, 0, 0)
-
 local IsAc = true
 local dr = false
 local mou = game.Players.LocalPlayer:GetMouse()
@@ -2644,3 +2640,8 @@ if dr then
 mtb.Position = UDim2.new(-0.025, mou.X, -0.05, mou.Y)
 end
 end)
+
+	--Set middle position
+
+cg:WaitForChild("SimpleSpy2").WaitForChild("Background").Position = UDim2.new(0, 150, 0, 0)
+ 
