@@ -186,7 +186,7 @@ local Window = Fluent:CreateWindow({
     Size = UDim2.fromOffset(SizeGuiX, SizeGuiZ),
     Acrylic = false, -- The blur may be detectable, setting this to false disables blur entirely
     Theme = "Dark",
-    MinimizeKey = Enum.KeyCode.LeftControl
+    MinimizeKey = Enum.KeyCode.RightControl
 })
 
 mainopen.MouseButton1Click:Connect(function()
